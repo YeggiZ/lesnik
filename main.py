@@ -30,7 +30,7 @@ logging.basicConfig(format="%(asctime)s %(filename)s %(name)s %(funcName)s %(lev
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-@dp.message_handler(commands=['start', 'help']) # Реакция на событие - команда /start
+@dp.message_handler(commands=['start', 'help', 'shit']) # Реакция на событие - команда /start
 async def command_start(message: types.Message): ##Создаем функцию реакции на сообщение
     await bot.send_message(message.from_user.id, "Привет! Я эхо-бот, отправь мне сообщение")  #отправляем сообщение
 
