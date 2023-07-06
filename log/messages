@@ -1,1 +1,32 @@
+start
+2023-06-29 18:55:14,851 executor.py aiogram _welcome INFO Bot: Егерь Кузьмич [@eger_kuzmich_bot]
+2023-06-29 18:55:14,934 executor.py aiogram _skip_updates WARNING Updates were skipped successfully.
+2023-06-29 18:55:14,935 dispatcher.py aiogram.dispatcher.dispatcher start_polling INFO Start polling.
+2023-06-29 19:13:56,916 executor.py aiogram _welcome INFO Bot: Егерь Кузьмич [@eger_kuzmich_bot]
+2023-06-29 19:13:57,016 executor.py aiogram _skip_updates WARNING Updates were skipped successfully.
+2023-06-29 19:13:57,016 dispatcher.py aiogram.dispatcher.dispatcher start_polling INFO Start polling.
+2023-06-29 19:51:36,582 executor.py aiogram _welcome INFO Bot: Егерь Кузьмич [@eger_kuzmich_bot]
+2023-06-29 19:51:36,670 executor.py aiogram _skip_updates WARNING Updates were skipped successfully.
+2023-06-29 19:51:36,671 dispatcher.py aiogram.dispatcher.dispatcher start_polling INFO Start polling.
+2023-07-03 00:41:33,945 dispatcher.py aiogram.dispatcher.dispatcher start_polling ERROR Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client_reqrep.py", line 914, in start
+    self._continue = None
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+from github repo
 
+yeeeepiiii
