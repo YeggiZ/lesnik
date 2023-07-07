@@ -35,8 +35,11 @@ async def command_start(message: types.Message): ##Создаем функцию
     await bot.send_message(message.from_user.id, "Привет! Я эхо-бот, отправь мне сообщение")  #отправляем сообщение
 
 @dp.message_handler() #Принимает событие - сообщение от юзера
-async def anymessage(soobchenie: types.Message): #Создаем функцию реакции на сообщение
-    await bot.send_message(soobchenie.from_user.id, soobchenie.text) # отправляем сообщение
+async def anymessage(message: types.Message): #Создаем функцию реакции на сообщение
+  if "fuck" in message.text.lower():
+    await bot.send_message(message.from.user.id, "Сам ты ФАК!!!")
+  else:
+    await bot.send_message(message.from_user.id, message.text) # отправляем сообщение
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates = True)
