@@ -37,7 +37,7 @@ async def command_start(message: types.Message): ##Создаем функцию
 @dp.message_handler() #Принимает событие - сообщение от юзера
 async def anymessage(message: types.Message): #Создаем функцию реакции на сообщение
   if "fuck" in message.text.lower():
-    await bot.send_message(message.from.user.id, "Сам ты ФАК!!!")
+    await bot.send_message(message.from_user.id, "Сам ты ФАК!!!")
   else:
     await bot.send_message(message.from_user.id, message.text) # отправляем сообщение
 
